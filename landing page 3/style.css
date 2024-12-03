@@ -32,6 +32,7 @@ nav{
     justify-content: space-around;
      
 }
+
 h1{
  
 display: flex;
@@ -58,6 +59,9 @@ a{
 }
 .nav__links a:hover{
     color: cornflowerblue;
+}
+.nav-list{
+    display: none;
 }
 
 .navbar-brand .img-logo{
@@ -99,6 +103,19 @@ a{
     ;
    
 }
+.nav-list{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-list li a{
+    color: #e9eaec;
+}
+.nav-list li a:hover{
+    color: cornflowerblue;
+}
+
 /*imagem da frente do T*/
 
 .logo-image{
@@ -247,10 +264,23 @@ a{
     color: cornflowerblue;
 }
 /*responsividade cell*/
+@media screen and (max-height:  1000px){
+    .header{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
     header{
+        
         font-size: 25px;
-    margin-right: 29px;
+        display: none;
+        position: absolute;
+        right: 19px;
+        top: 25px;
+    }
+    .header{
+        display: block;
     }
     .container {
         display: flex;
@@ -297,7 +327,7 @@ a{
    
 
     .btn.explore {
-        margin: 1rem auto;
+        margin: -3rem auto;
         font-size: 0.8rem;
         padding: 0.5rem 1rem;
         font-size: 15px;
@@ -334,5 +364,92 @@ a{
     .footer__links li {
         font-size: 15px;
     }
+    .hamburger{
+        display: block;
+        z-index: 2;
+    }
+.hamburger{
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+}
+.hamburger::before,
+.hamburger::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+.nav-list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background:rgb(231, 172, 95);
+    clip-path: circle(100px at 90% -15%);
+    transition: 1s ease-out;
+    z-index: 1;
+   
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    pointer-events: none;
+}
+.nav-list li:nth-child(1) a{
+    transition: 0.5s 0.2s;
+}
+.nav-list li:nth-child(2) a{
+    transition: 0.5s 0.4s;
+}
+.nav-list li:nth-child(3) a{
+    transition: 0.5s 0.6s;
+}
+
+
+.nav.active .nav-list{
+    clip-path: circle( 1500px at 90% -15%);
+    
+
+}
+.nav.active .nav-list a{
+    opacity: 1;
+    
+}
+.nav.active .hamburger{
+    position: fixed;
+    top: 26px;
+    right: 16px;
+    border-top-color: transparent;
+}
+.nav.active .hamburger::before{
+    transform: rotate(135deg);
+
+}
+.nav.active .hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+
+}
+.nav-list{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.nav-list li a{
+    color: #e9eaec;
+}
+.nav-list li a:hover{
+    color: cornflowerblue;
+}
 }
 
