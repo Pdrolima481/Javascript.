@@ -120,7 +120,7 @@ body{
     background-position: center;
 }
 .slider-wrapper .slider-item:nth-child(2)::before{
-    background-image: url(imagens/young-asian-woman-startup-small-business-freelance-sale-fashion-clothing-with-parcel-box-computer-laptop-table-sitting-isolated-pink-background-online-marketing-delivery-concept.jpg);
+    background-image: url(imagens/young-asian-woman-startup.jpg);
 }
 .slider-wrapper .slider-item:nth-child(3)::before{
     background-image: url(imagens/pexels-tima-miroshnichenko-6764945.jpg);
@@ -420,10 +420,7 @@ h1{
             top: 27px;
         left: 340px;
         }
-        .barr-nav {
-            position: relative;
-            right:163px !important;
-        } 
+        
 }
 @media (max-width: 768px) {
     header{
