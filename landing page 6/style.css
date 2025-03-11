@@ -448,7 +448,7 @@ h1{
         justify-content: space-around;
     }
     .barr-nav{
-        display: flex;
+        display: none;
         width: 20%;
         height: 20%;
         position: relative;
@@ -622,7 +622,7 @@ h1{
 @media(max-width: 667px) {
     .nav{
     position: absolute;
-    bottom: 27px;
+    bottom: 19px;
     right: 19px;
     }
     .nav.active .hamburger{
