@@ -12,6 +12,7 @@ body{
 
 .navbar{
     background:rgb(48, 46, 46);
+    width: 100% !important;
 }
 .logo {
    color: #fff;
@@ -622,20 +623,20 @@ h1{
     .nav{
     position: absolute;
     bottom: 27px;
-    right: 61px;
+    right: 19px;
     }
     .nav.active .hamburger{
         top: 27px;
-    left: 340px;
+    left: 362px;
     }
     .barr-nav {
         position: relative;
-        right:163px !important;
+        right:136px !important;
     }
     .navbar a{
-        font-size: 20px;
+        font-size: 19px;
         position: relative;
-        left: 8px;}
+        left: 5px;}
         .footer-section p{
             right: 2px;
             position: relative;
@@ -675,14 +676,14 @@ h1{
     .nav{
         position: absolute;
         bottom: 27px;
-        right: 61px;
+        right: 7px;
         }
         .nav.active .hamburger{
             top: 27px;
-        left: 340px;
+        left: 329px;
         }
         .barr-nav {
             position: relative;
-            right: 160px !important;
+            right: 108px !important;
         }
 }
