@@ -532,8 +532,8 @@ h1{
 }
 .nav.active .hamburger{
     position: fixed;
-    top: 25px;
-    left: 365px;
+    top: 20px;
+    left: 372px;
     border-top-color: transparent;
 }
 .nav.active .hamburger::before{
@@ -681,8 +681,8 @@ h1{
         right: 7px;
         }
         .nav.active .hamburger{
-            top: 27px;
-        left: 329px;
+            top: 10px;
+            left: 342px;
         }
         .barr-nav {
             display: none;
