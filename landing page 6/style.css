@@ -626,8 +626,9 @@ h1{
     right: 19px;
     }
     .nav.active .hamburger{
-        top: 27px;
-    left: 362px;
+        top: 18px;
+        left: 316px;
+    }
     }
     .barr-nav {
         display: none;
@@ -651,7 +652,7 @@ h1{
             text-align: center;
             
         }
-} }
+} 
 @media(max-width: 430px)and(max-width: 375px) {
     .nav{
         position: absolute;
@@ -674,7 +675,7 @@ h1{
         }
         
 }
-@media(max-width: 375px){
+@media(min-width: 375px){
     .nav{
         position: absolute;
         bottom: 27px;
